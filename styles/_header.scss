@@ -1,5 +1,5 @@
 /***** Header *****/
-$header-height: 71px;
+$header-height: 50px;
 
 .header {
   @include max-width-container;
@@ -8,20 +8,44 @@ $header-height: 71px;
   display: flex;
   height: $header-height;
   justify-content: space-between;
+  background-color: $mm-brand-bg-dark;
+  padding: 5px 15% 5px 15%;
 }
 
-.logo img {
-  max-height: 37px;
+.logo {
+  .row {
+    background-color: $mm-brand-bg;
+    display: flex;
+  }
+  .column {
+    flex: 33.33%;
+    padding: 5px 5px 0 5px;
+
+    .mit-logo {
+      height: 20px;
+      width: 40px;
+    }
+    .micromasters-logo {
+      height: 20px;
+      width: 180px;
+    }
+  }
+  .divider-large {
+    flex: 33.33%;
+    width: 1px;
+    height: 20px;
+    margin: 5px 5px 0 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
 
 .user-nav {
   @include tablet { position: relative; }
-  display: inline-block;
   position: absolute;
   white-space: nowrap;
 
   &[aria-expanded="true"] {
-    background-color: #fff;
+    background-color: $mm-brand-bg;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15), 0 4px 10px 0 rgba(0, 0, 0, .1);
     border: solid 1px #ddd;
     right: 0;
@@ -43,7 +67,7 @@ $header-height: 71px;
     }
 
     border: 0;
-    color: $link_color;
+    color: white;
     display: none;
     font-size: 14px;
     padding: 0 20px 0 0;
@@ -55,11 +79,16 @@ $header-height: 71px;
     &:focus,
     &:active {
       background-color: transparent;
-      color: $link_color;
+      color: white;
       text-decoration: underline;
     }
 
     &.sign-in { display: inline-block; }
+  }
+
+  .row {
+    display: flex;
+    color: white;
   }
 
   .hide-on-mobile {
@@ -72,7 +101,7 @@ $header-height: 71px;
     @include tablet { display: none; }
     background: none;
     border: 0;
-    color: $link_color;
+    color: white;
     display: inline-block;
     margin-right: 10px;
     padding: 0;

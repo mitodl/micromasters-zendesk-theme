@@ -7,6 +7,10 @@ $text_color: #333 !default;
 $link_color: #0072ef !default;
 $background_color: #fff !default;
 
+$mm-brand-bg: #a31f34;
+$mm-brand-bg-dark: #90192c;
+$mm-brand-bg-light: #f9315b;
+
 $visited-link-color: zass-darken($link_color, 20%);
 $hover-button-color: zass-darken($brand_color, 20%);
 $secondary-text-color: zass-lighten($text_color, 20%);
@@ -31,7 +35,7 @@ $field-text-focus-color: #555;
 // Breakpoints variables
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$max-width-container: 1160px;
+$max-width-container: 100%;
 
 // Fonts
 $heading_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;

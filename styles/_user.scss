@@ -9,14 +9,14 @@
 
   > button {
     border: 0;
-    color: $link_color;
+    color: white;
     min-width: 0;
     padding: 0;
     white-space: nowrap;
 
     &:hover,
     &:focus {
-      color: $link_color;
+      color: rgb(233, 232, 232);
       background-color: transparent;
     }
 
