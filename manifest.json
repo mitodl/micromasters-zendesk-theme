@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen",
   "author": "Zendesk",
-  "version": "2.7.2",
+  "version": "2.7.3",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#0072EF"
+          "value": "#126F9A"
         },
         {
           "identifier": "brand_text_color",
@@ -199,12 +199,6 @@
     {
       "label": "brand_group_label",
       "variables": [
-        {
-          "identifier": "logo",
-          "type": "file",
-          "description": "logo_description",
-          "label": "logo_label"
-        },
         {
           "identifier": "favicon",
           "type": "file",

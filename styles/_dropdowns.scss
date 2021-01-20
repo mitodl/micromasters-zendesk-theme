@@ -22,8 +22,9 @@
 }
 
 .dropdown-menu {
-  background: #fff;
-  border: 1px solid rgb(216, 216, 216);
+  background: $mm-brand-bg;
+  color: white;
+  border: 1px solid $mm-brand-bg;
   border-radius: 3px;
   box-shadow: 0 1px 5px rgba(0, 0, 0 , .1);
   display: none;
@@ -48,7 +49,7 @@
 
   [role="separator"] {
     border-bottom: 1px solid rgb(216, 216, 216);
-    color: rgb(150, 150, 150);
+    color: $mm-brand-bg;
     display: block;
     font-weight: normal;
     font-size: 11px;
@@ -57,7 +58,7 @@
   }
 
   [role="menuitem"] {
-    color: #333;
+    color: white;
     cursor: pointer;
     display: block;
     padding: 7px 40px 7px 20px;
@@ -74,9 +75,9 @@
     }
     &:hover,
     &:focus {
-      background: #f3f3f3;
+      background: $mm-brand-bg-dark;
       text-decoration: none;
-      color: #333;
+      color: white;
     }
 
     &[aria-selected="true"] {
