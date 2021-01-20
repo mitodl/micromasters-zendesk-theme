@@ -2,12 +2,19 @@
 
 <header class="header">
   <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-      {{#if settings.show_brand_name}}
-        <span aria-hidden="true">{{help_center.name}}</span>
-      {{/if}}
-    {{/link}}
+    <div class="row">
+      <div class="column">
+        <a href="http://www.mit.edu">
+          <img class="mit-logo" src="{{ asset 'mit_logo.svg'}}" alt="MIT Logo">
+        </a>
+      </div>
+      <div class="divider-large">&nbsp;</div>
+      <div class="column">
+        <a href="https://micromasters.mit.edu/">
+          <img class="micromasters-logo" src="{{ asset 'micromasters_logo_programs.svg'}}" alt="Micromasters Logo">
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="nav-wrapper-desktop">

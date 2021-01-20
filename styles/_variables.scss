@@ -1,6 +1,10 @@
 // Variables
 
 // Colors
+$mm-brand-bg: #a31f34;
+$mm-brand-bg-dark: #90192c;
+$mm-brand-bg-light: #f9315b;
+
 $hover-button-color: zass-darken($brand_color, 20%);
 $secondary-text-color: zass-lighten($text_color, 20%);
 
@@ -26,7 +30,7 @@ $field-text-focus-color: #555;
 // Breakpoints variables
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$max-width-container: 1160px;
+$max-width-container: 100%;
 
 $font-weight-semibold: 600;
 
