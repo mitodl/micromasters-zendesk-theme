@@ -662,7 +662,6 @@ ul {
 }
 
 .logo .row {
-  background-color: #a31f34;
   display: flex;
 }
 
@@ -678,7 +677,7 @@ ul {
 
 .logo .column .micromasters-logo {
   height: 20px;
-  width: 180px;
+  width: 185px;
 }
 
 .logo .divider-large {
