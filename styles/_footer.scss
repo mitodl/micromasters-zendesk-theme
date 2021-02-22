@@ -1,20 +1,187 @@
 /***** Footer *****/
 .footer {
   border-top: 1px solid $border-color;
-  margin-top: 60px;
-  padding: 30px 0;
+  margin-top: 30px;
+  color: white;
 
-  a { color: $secondary-text-color; }
-
+  a {
+    color: white;
+  }
   &-inner {
     @include max-width-container;
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 6%;
   }
-
+  .footer-inner {
+    padding-top: 40px !important;
+    padding-bottom: 50px !important;
+    background: $mm-footer-bg;
+  }
+  .contact-inner {
+    padding-top: 20px !important;
+    padding-bottom: 50px !important;
+  }
   &-language-selector button {
+    display: none;
     color: $secondary-text-color;
-    display: inline-block;
     font-weight: $font-weight-light;
   }
+
+  .footer-language-selector {
+    display: none;
+  }
+
+  .footer-links {
+    margin: 24px 0;
+
+    a {
+      display: inline-block;
+      margin: 0 24px 0 0;
+      color: $mm-footer-link;
+      text-decoration: underline;
+    }
+  }
+
+  .social-buttons-list {
+    margin-bottom: 60px;
+  }
+
+  .company-info {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 0 20px;
+    text-align: left;
+
+    @include desktop {
+      padding: 0;
+      float: left;
+      width: 70%;
+    }
+
+    a.logo-link {
+      margin: 0 auto 15px;
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: top;
+
+      @include tablet {
+        margin: 5px 25px 0 0;
+      }
+    }
+
+    img {
+      width: 72px;
+    }
+
+    address {
+      overflow: hidden;
+      display: block;
+      margin: 0;
+      font-style: normal;
+      white-space: pre-line;
+      color: $mm-grey-text;
+      font-size: 13.25px;
+    }
+  }
+  .copyright {
+    display: block;
+    font-size: 13.25px;
+    line-height: 20px;
+    color: $mm-grey-text;
+  }
+  .contact-block {
+    text-align: center;
+    color: black;
+    padding: 30px 0 0px;
+    position: relative;
+    background: #fff;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      content: "";
+      height: 0.5px;
+      background: black;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: "";
+      background: rgba(black, 0.3);
+    }
+
+    h1 {
+      font-size: 28px;
+      line-height: 44px;
+      font-weight: 600;
+      margin: 0 0 20px;
+    }
+
+    .link-not-found {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .footer-cta-left {
+    padding: 0;
+    text-align: left;
+
+    @include desktop {
+      padding: 0;
+      float: right;
+      width: 30%;
+    }
+  }
+
+  .footer-button {
+    background: $mm-give-mit-button-bg !important;
+    font-size: 14px;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 500;
+    border-radius: 3px;
+    display: block;
+
+    @include desktop {
+      width: 34%;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 50px;
+    }
+
+    &:hover {
+      background: $mm-give-mit-button-hover-bg !important;
+      text-decoration: none;
+    }
+  }
+  .request-button {
+    display: inline-block;
+    background: $mm-new-req-button-bg !important;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    width: 174px;
+    line-height: 42px;
+    height: 42px;
+
+    &:hover {
+      background: $mm-give-mit-button-hover-bg !important;
+      text-decoration: none;
+    }
+  }
+}
+
+.powered-by-zendesk {
+  display: none;
 }
