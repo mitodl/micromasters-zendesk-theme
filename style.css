@@ -740,7 +740,7 @@ ul {
 }
 
 .nav-wrapper a.sign-in {
-  display: inline-block;
+  display: none;
 }
 
 .nav-wrapper .row {
