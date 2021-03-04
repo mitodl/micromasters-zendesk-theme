@@ -760,7 +760,7 @@ ul {
 }
 
 .nav-wrapper-desktop a.sign-in {
-  display: inline-block;
+  display: none;
 }
 
 .nav-wrapper-desktop .row {
