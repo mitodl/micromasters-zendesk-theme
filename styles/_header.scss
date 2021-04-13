@@ -1,5 +1,5 @@
 /***** Header *****/
-$header-height: 50px;
+$header-height: 57px;
 
 .header {
   @include max-width-container;
@@ -8,8 +8,8 @@ $header-height: 50px;
   display: flex;
   height: $header-height;
   justify-content: space-between;
-  background-color: $mm-brand-bg-dark;
-  padding: 5px 15% 5px 15%;
+  background-color: $mm-brand-bg;
+  padding: 5px 2% 5px 2%;
 }
 
 .logo {
@@ -18,22 +18,23 @@ $header-height: 50px;
   }
   .column {
     flex: 33.33%;
-    padding: 5px 5px 0 5px;
+    padding: 4px 5px 0 5px;
 
     .mit-logo {
-      height: 20px;
-      width: 40px;
+      height: 36px;
+      width: 51px;
     }
     .micromasters-logo {
-      height: 20px;
-      width: 185px;
+      height: 23px;
+      width: 263px;
+      margin-top: 7px;
     }
   }
   .divider-large {
     flex: 33.33%;
     width: 1px;
-    height: 20px;
-    margin: 5px 5px 0 0;
+    height: 30px;
+    margin: 8px 12px 0 10px;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
   }
 }
