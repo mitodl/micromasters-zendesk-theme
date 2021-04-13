@@ -667,7 +667,7 @@ ul {
 
 .logo .column {
   flex: 33.33%;
-  padding: 5px 5px 0 5px;
+  padding: 4px 5px 0 5px;
 }
 
 .logo .column .mit-logo {
@@ -678,14 +678,14 @@ ul {
 .logo .column .micromasters-logo {
   height: 23px;
   width: 263px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .logo .divider-large {
   flex: 33.33%;
   width: 1px;
   height: 30px;
-  margin: 8px 10px 0 10px;
+  margin: 8px 12px 0 10px;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
