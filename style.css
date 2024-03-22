@@ -661,32 +661,14 @@ ul {
   }
 }
 
-.logo .row {
-  display: flex;
-}
-
-.logo .column {
-  flex: 33.33%;
+.logo {
   padding: 4px 5px 0 5px;
 }
 
-.logo .column .mit-logo {
-  height: 36px;
-  width: 51px;
-}
-
-.logo .column .micromasters-logo {
+.logo .micromasters-logo {
   height: 23px;
   width: 263px;
   margin-top: 7px;
-}
-
-.logo .divider-large {
-  flex: 33.33%;
-  width: 1px;
-  height: 30px;
-  margin: 8px 12px 0 10px;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .user-nav {
@@ -1010,7 +992,7 @@ ul {
 }
 
 .footer .company-info img {
-  width: 72px;
+  width: 150px;
 }
 
 .footer .company-info address {

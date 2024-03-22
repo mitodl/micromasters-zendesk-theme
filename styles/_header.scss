@@ -13,29 +13,12 @@ $header-height: 57px;
 }
 
 .logo {
-  .row {
-    display: flex;
-  }
-  .column {
-    flex: 33.33%;
-    padding: 4px 5px 0 5px;
+  padding: 4px 5px 0 5px;
 
-    .mit-logo {
-      height: 36px;
-      width: 51px;
-    }
-    .micromasters-logo {
-      height: 23px;
-      width: 263px;
-      margin-top: 7px;
-    }
-  }
-  .divider-large {
-    flex: 33.33%;
-    width: 1px;
-    height: 30px;
-    margin: 8px 12px 0 10px;
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  .micromasters-logo {
+    height: 23px;
+    width: 263px;
+    margin-top: 7px;
   }
 }
 

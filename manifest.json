@@ -237,9 +237,9 @@
           "label": "community_image_label"
         },
         {
-          "identifier": "mit_footer_logo",
+          "identifier": "mit_ol_logo",
           "type": "file",
-          "description": "mit_footer_logo_description",
+          "description": "mit_ol_logo_description",
           "label": "Footer logo"
         }
       ]
