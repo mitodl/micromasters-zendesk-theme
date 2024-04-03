@@ -84,7 +84,7 @@ Learn more [here](https://support.zendesk.com/hc/en-us/articles/360001948367).
 ## Styles
 The styles that Theming Center needs to use in the theme are in the `style.css` file in the root folder.
 
-he styles for the theme are split using Sass partials, all the partials are under [styles/](/styles/), they are all included in the "main" file [index.scss](/styles/index.scss) and then compiled to CSS.
+The styles for the theme are split using Sass partials, all the partials are under [styles/](/styles/), they are all included in the "main" file [index.scss](/styles/index.scss) and then compiled to CSS.
 If you wish to use SASS you can go to the [using SASS section](#using-sass)
 
 ## Assets
