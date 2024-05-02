@@ -266,6 +266,18 @@
       ]
     },
     {
+      "label": "header_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_user_info",
+          "type": "checkbox",
+          "description": "user_info_description",
+          "label": "user_info_label",
+          "value": false
+        }
+      ]
+    },
+    {
       "label": "search_group_label",
       "variables": [
         {
