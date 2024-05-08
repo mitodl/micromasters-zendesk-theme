@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#17494D"
+          "value": "#126F9A"
         },
         {
           "identifier": "brand_text_color",
@@ -48,7 +48,7 @@
           "type": "color",
           "description": "visited_link_color_description",
           "label": "visited_link_color_label",
-          "value": "#9358B0"
+          "value": "#126F9A"
         },
         {
           "identifier": "background_color",
@@ -131,9 +131,13 @@
             {
               "label": "Trebuchet MS",
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            },
+            {
+              "label": "Roboto",
+              "value": "'Roboto', BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "'Roboto', BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
         },
         {
           "identifier": "text_font",
@@ -204,21 +208,19 @@
             {
               "label": "Trebuchet MS",
               "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+            },
+            {
+              "label": "Roboto",
+              "value": "'Roboto', BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
             }
           ],
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+          "value": "'Roboto', BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
         }
       ]
     },
     {
       "label": "brand_group_label",
       "variables": [
-        {
-          "identifier": "logo",
-          "type": "file",
-          "description": "logo_description",
-          "label": "logo_label"
-        },
         {
           "identifier": "show_brand_name",
           "type": "checkbox",
@@ -254,6 +256,24 @@
           "type": "file",
           "description": "community_image_description",
           "label": "community_image_label"
+        },
+        {
+          "identifier": "mit_ol_logo",
+          "type": "file",
+          "description": "mit_ol_logo_description",
+          "label": "Footer logo"
+        }
+      ]
+    },
+    {
+      "label": "header_page_group_label",
+      "variables": [
+        {
+          "identifier": "show_user_info",
+          "type": "checkbox",
+          "description": "user_info_description",
+          "label": "user_info_label",
+          "value": false
         }
       ]
     },
@@ -401,6 +421,88 @@
           "description": "request_list_beta_description",
           "label": "request_list_beta_label",
           "value": false
+        }
+      ]
+    },
+    {
+      "label": "footer_section_contents",
+      "variables": [
+        {
+          "identifier": "show_contact_us_section",
+          "type": "checkbox",
+          "description": "show_contact_us_section_description",
+          "label": "show_contact_us_section_label",
+          "value": true
+        },
+        {
+          "identifier": "contact_us_header",
+          "type": "text",
+          "description": "contact_us_header_description",
+          "label": "contact_us_header_label",
+          "value": "Can't find what you're looking for?"
+        },
+        {
+          "identifier": "contact_us_button_text",
+          "type": "text",
+          "description": "contact_us_button_text_description",
+          "label": "contact_us_button_text_label",
+          "value": "Contact Us"
+        },
+        {
+          "identifier": "mit_address",
+          "type": "text",
+          "description": "mit_address_description",
+          "label": "mit_address_label",
+          "value": "Massachusetts Institute of Technology\nCambridge, MA 02139"
+        },
+        {
+          "identifier": "mit_copyright_text",
+          "type": "text",
+          "description": "mit_copyright_description",
+          "label": "mit_copyright_label",
+          "value": "Massachusetts Institute of Technology"
+        },
+        {
+          "identifier": "give_to_mit_link",
+          "type": "text",
+          "description": "give_to_mit_link_description",
+          "label": "give_to_mit_link_label",
+          "value": "https://giving.mit.edu/explore/campus-student-life/digital-learning"
+        },
+        {
+          "identifier": "mit_ol_home",
+          "type": "text",
+          "description": "mit_ol_home_description",
+          "label": "mit_ol_home_label",
+          "value": "https://openlearning.mit.edu/"
+        },
+        {
+          "identifier": "edx_home",
+          "type": "text",
+          "description": "edx_home_description",
+          "label": "edx_home_label",
+          "value": "https://www.edx.org/"
+        },
+        {
+          "identifier": "odl_home",
+          "type": "text",
+          "description": "odl_home_description",
+          "label": "odl_home_label",
+          "value": "https://odl.mit.edu/"
+        },
+        {
+          "identifier": "mit_tos",
+          "type": "text",
+          "description": "mit_tos_description",
+          "label": "mit_tos_label",
+          "value": "https://micromasters.mit.edu/terms_of_service/"
+        },
+        {
+          "identifier": "mit_accessibility",
+          "type": "text",
+          "description": "mit_accessibility_description",
+          "label": "mit_accessibility_label",
+          "value": "https://accessibility.mit.edu/"
         }
       ]
     }

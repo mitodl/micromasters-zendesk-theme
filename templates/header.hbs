@@ -2,26 +2,25 @@
 
 <header class="header">
   <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-      {{#if settings.show_brand_name}}
-        <span aria-hidden="true">{{help_center.name}}</span>
-      {{/if}}
-    {{/link}}
+    <a href="https://micromasters.mit.edu/">
+      <img class="micromasters-logo" src="{{ asset 'micromasters_logo_programs.svg'}}" alt="Micromasters Logo">
+    </a>
   </div>
 
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
       <ul class="user-nav-list">
-        <li>{{link 'community'}}</li>
+{{!--         <li>{{link 'community'}}</li> --}}
         <li>{{link 'new_request' class='submit-a-request'}}</li>
-        {{#unless signed_in}}
-          <li>
-            {{#link "sign_in" class="sign-in"}}
-              {{t 'sign_in'}}
-            {{/link}}
-          </li>
-        {{/unless}}
+        {{#if settings.show_user_info}}
+          {{#unless signed_in}}
+            <li>
+              {{#link "sign_in" class="sign-in"}}
+                {{t 'sign_in'}}
+              {{/link}}
+            </li>
+          {{/unless}}
+        {{/if}}
       </ul>
     </nav>
     {{#if signed_in}}
@@ -75,14 +74,16 @@
           <li class="item">{{change_password role="menuitem" class='change-password'}}</li>
           <li class="nav-divider"></li>
         {{else}}
-          <li class="item">
-            {{#link "sign_in" role="menuitem"}}
-              {{t 'sign_in'}}
-            {{/link}}
-          </li>
+          {{#if settings.show_user_info}}
+            <li class="item">
+              {{#link "sign_in" role="menuitem"}}
+                {{t 'sign_in'}}
+              {{/link}}
+            </li>
+          {{/if}}
           <li class="nav-divider"></li>
         {{/if}}
-        <li class="item">{{link 'community' role="menuitem"}}</li>
+{{!--         <li class="item">{{link 'community' role="menuitem"}}</li> --}}
         <li class="item">{{link 'new_request' role="menuitem" class='submit-a-request'}}</li>
         <li class="nav-divider"></li>
         {{#if signed_in}}

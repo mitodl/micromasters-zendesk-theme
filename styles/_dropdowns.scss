@@ -26,8 +26,9 @@
 }
 
 .dropdown-menu {
-  background: #fff;
-  border: 1px solid $menu-border-color;
+  background: $mm-brand-bg;
+  color: white;
+  border: 1px solid $mm-brand-bg;
   border-radius: 3px;
   box-shadow: 0px 20px 30px 0px rgba(23, 73, 77, 0.15);
   display: none;
@@ -48,12 +49,13 @@
 
   [role="separator"] {
     border-bottom: 1px solid #e9ebed;
+    color: $mm-brand-bg;
     margin: 4px 0;
   }
 
   [role="menuitem"],
   [role="menuitemradio"] {
-    color: #2f3941;
+    color: white;
     cursor: pointer;
     display: block;
     padding: 7px 40px 7px 20px;
@@ -70,9 +72,9 @@
     }
     &:hover,
     &:focus {
-      background: rgba(31, 115, 183, 0.08);
+      background: $mm-brand-bg-dark;
       text-decoration: none;
-      color: #2f3941;
+      color: white;
     }
 
     &[aria-selected="true"],
